@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#game {
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+#character {
+  width: 45px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  top: 150px;
+  margin-inline-start: 19px;
+}
+.animate {
+  animation: jump 500ms;
+}
+#character img {
+  width: 44px;
+}
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  animation: block 1s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.ssd {
+  text-align: center;
+}
+
+#scoree {
+  display: flex;
+  justify-content: center;
+  font-size: 29px;
+  font-weight: 500;
+  color: magenta;
+}
